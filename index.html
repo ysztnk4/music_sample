@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Music Library | 音源試聴サイト</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="stylesheet" href="common/css/normalize.css">
+    <link rel="stylesheet" href="common/css/grid.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header class="sp_header">
+        <p class="sp_header_logo">
+            Music Library
+        </p>
+        <div class="sp_menu_btn">
+            <div class="sp_menu_icon">
+                <div class="sp_menu_bar bar_1"></div>
+                <div class="sp_menu_bar bar_2"></div>
+                <div class="sp_menu_bar bar_3"></div>
+            </div>
+            <div class="sp_menu_menu">メニュー</div>
+            <div class="sp_menu_close">閉じる</div>
+        </div>
+    </header>
+
+    <div class="mainSection clearfix">
+        <div class="side">
+            <div class="sideInner">
+                <div class="sideHeader">
+                    <h1 class="mainTitle">Music Libraly</h1>
+                    <p class="mainTitle_caption">このサイトでは映像商品にBGMとしてご利用いただける音源の試聴が可能です。</p>
+                </div>
+                <div class="sortMenu">
+                    <header class="sortMenu_header">
+                        <h2 class="sortMenu_title">絞り込みメニュー</h2>
+                        <p class="sortMenu_title_caption">以下の項目の組み合わせにより、音源の特徴での絞り込みが可能です。</p>
+                    </header>
+                    <div class="sortMenu_section">
+                        <h3 class="sortMenu_list_title"><i class="fa fa-tag"></i>ボーカル</h3>
+                        <p id="sortMenu_list_1_result" class="sortMenu_list_result" data-sort=".null">.null</p>
+                        <ul id="sortMenu_list_1" class="sortMenu_list">
+                            <li>
+                                <p class="sortMenu_btn active" data-sort="null">選択しない</p>
+                            </li>
+                            <li>
+                                <p class="sortMenu_btn" data-sort="男性">男性</p>
+                            </li>
+                            <li>
+                                <p class="sortMenu_btn" data-sort="女性">女性</p>
+                            </li>
+                            <li>
+                                <p class="sortMenu_btn" data-sort="デュエット">デュエット</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sortMenu_section">
+                        <h3 class="sortMenu_list_title"><i class="fa fa-tag"></i>映像タイプ</h3>
+                        <p id="sortMenu_list_2_result" class="sortMenu_list_result" data-sort=".null">.null</p>
+                        <ul id="sortMenu_list_2" class="sortMenu_list">
+                            <li>
+                                <p class="sortMenu_btn active" data-sort="null">選択しない</p>
+                            </li>
+                            <li>
+                                <p class="sortMenu_btn" data-sort="オープニング">オープニング</p>
+                            </li>
+                            <li>
+                                <p class="sortMenu_btn" data-sort="エンドロール">エンドロール</p>
+                            </li>
+                            <li>
+                                <p class="sortMenu_btn" data-sort="プロフィール">プロフィール</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sortMenu_section">
+                        <h3 class="sortMenu_list_title"><i class="fa fa-tag"></i>テンポ</h3>
+                        <p id="sortMenu_list_3_result" class="sortMenu_list_result" data-sort=".null">.null</p>
+                        <ul id="sortMenu_list_3" class="sortMenu_list">
+                            <li>
+                                <p class="sortMenu_btn active" data-sort="null">選択しない</p>
+                            </li>
+                            <li>
+                                <p class="sortMenu_btn" data-sort="スローテンポ">スローテンポ</p>
+                            </li>
+                            <li>
+                                <p class="sortMenu_btn" data-sort="ミドルテンポ">ミドルテンポ</p>
+                            </li>
+                            <li>
+                                <p class="sortMenu_btn" data-sort="アップテンポ">アップテンポ</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Eof side -->
+
+        <div class="main">
+            <div class="itemContainer">
+                <div class="item 男性 オープニング スローテンポ">
+                    <a href="common/music/test1.mp3" class="item_link audio_link">
+                        <p class="item_icon"><i class="fa fa-music"></i></p>
+                        <header class="item_header">
+                            <h3 class="item_title">長いタイトルの楽曲の場合エンドロールミュージック</h3>
+                            <p class="item_songTag"><i class="fa fa-tag"></i><span>男性</span><span>オープニング</span><span>スローテンポ</span></p>
+                        </header>
+                    </a>
+                </div>
+                <div class="item 女性 オープニング アップテンポ">
+                    <a href="common/video/test1.mp4" class="item_link video_link">
+                        <p class="item_icon"><i class="fa fa-music"></i></p>
+                        <header class="item_header">
+                            <h3 class="item_title">ビデオ</h3>
+                            <p class="item_songTag"><i class="fa fa-tag"></i><span>女性</span><span>オープニング</span><span>アップテンポ</span></p>
+                        </header>
+                    </a>
+                </div>
+                <div class="item 男性 オープニング スローテンポ">
+                    <a href="common/music/test1.mp3" class="item_link audio_link">
+                        <p class="item_icon"><i class="fa fa-music"></i></p>
+                        <header class="item_header">
+                            <h3 class="item_title">エンドロールミュージック</h3>
+                            <p class="item_songTag"><i class="fa fa-tag"></i><span>男性</span><span>オープニング</span><span>スローテンポ</span></p>
+                        </header>
+                    </a>
+                </div>
+                <div class="item 女性 オープニング アップテンポ">
+                    <a href="common/music/test2.mp3" class="item_link audio_link">
+                        <p class="item_icon"><i class="fa fa-music"></i></p>
+                        <header class="item_header">
+                            <h3 class="item_title">オープニングミュージック</h3>
+                            <p class="item_songTag"><i class="fa fa-tag"></i><span>女性</span><span>オープニング</span><span>アップテンポ</span></p>
+                        </header>
+                    </a>
+                </div>
+                <div class="item 男性 エンドロール スローテンポ">
+                    <a href="common/video/test1.mp4" class="item_link video_link">
+                        <p class="item_icon"><i class="fa fa-music"></i></p>
+                        <header class="item_header">
+                            <h3 class="item_title">ビデオ２</h3>
+                            <p class="item_songTag"><i class="fa fa-tag"></i><span>男性</span><span>エンドロール</span><span>スローテンポ</span></p>
+                        </header>
+                    </a>
+                </div>
+
+                <div class="item 男性 オープニング スローテンポ">
+                    <a href="common/music/test1.mp3" class="item_link audio_link">
+                        <p class="item_icon"><i class="fa fa-music"></i></p>
+                        <header class="item_header">
+                            <h3 class="item_title">長いタイトルの楽曲の場合エンドロールミュージック</h3>
+                            <p class="item_songTag"><i class="fa fa-tag"></i><span>男性</span><span>オープニング</span><span>スローテンポ</span></p>
+                        </header>
+                    </a>
+                </div>
+                <div class="item 女性 オープニング アップテンポ">
+                    <a href="common/video/test1.mp4" class="item_link video_link">
+                        <p class="item_icon"><i class="fa fa-music"></i></p>
+                        <header class="item_header">
+                            <h3 class="item_title">ビデオ</h3>
+                            <p class="item_songTag"><i class="fa fa-tag"></i><span>女性</span><span>オープニング</span><span>アップテンポ</span></p>
+                        </header>
+                    </a>
+                </div>
+                <div class="item 男性 オープニング スローテンポ">
+                    <a href="common/music/test1.mp3" class="item_link audio_link">
+                        <p class="item_icon"><i class="fa fa-music"></i></p>
+                        <header class="item_header">
+                            <h3 class="item_title">エンドロールミュージック</h3>
+                            <p class="item_songTag"><i class="fa fa-tag"></i><span>男性</span><span>オープニング</span><span>スローテンポ</span></p>
+                        </header>
+                    </a>
+                </div>
+                <div class="item 女性 オープニング アップテンポ">
+                    <a href="common/music/test2.mp3" class="item_link audio_link">
+                        <p class="item_icon"><i class="fa fa-music"></i></p>
+                        <header class="item_header">
+                            <h3 class="item_title">オープニングミュージック</h3>
+                            <p class="item_songTag"><i class="fa fa-tag"></i><span>女性</span><span>オープニング</span><span>アップテンポ</span></p>
+                        </header>
+                    </a>
+                </div>
+                <div class="item 男性 エンドロール スローテンポ">
+                    <a href="common/video/test1.mp4" class="item_link video_link">
+                        <p class="item_icon"><i class="fa fa-music"></i></p>
+                        <header class="item_header">
+                            <h3 class="item_title">ビデオ２</h3>
+                            <p class="item_songTag"><i class="fa fa-tag"></i><span>男性</span><span>エンドロール</span><span>スローテンポ</span></p>
+                        </header>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- Eof main -->
+
+        <div class="player clearfix">
+            <!-- audio source -->
+            <audio id="audio" class="audio" controls>
+                <source src="" class="playerSource">
+            </audio>
+            <!-- Eof audio source -->
+
+            <!-- video source -->
+            <video id="video" class="video" loop>
+                <source src="" class="playerSource">
+            </video>
+            <!-- Eof video source -->
+            <p id="video_close" class="video_close"><i class="fa fa-times"></i></p>
+
+            <header class="player_header">
+                <h2 class="player_title"></h2>
+                <p class="player_songTag"></p>
+            </header>
+            <!-- Eof player_header -->
+
+            <div class="player_controls clearfix">
+                <div class="player_btn">
+                    <a class="player_play"><i class="fa fa-play"></i></a>
+                    <a class="player_stop active"><i class="fa fa-pause"></i></a>
+                </div>
+
+                <div class="player_seek">
+                    <input type="range" class="player_seek_input" value="0" min="0" max="">
+                    <div class="player_seek_bar">
+                        <div class="player_seek_point"></div>
+                    </div>
+                </div>
+
+                <div class="player_volume clearfix">
+                    <div class="player_volume_icon">
+                        <i class="fa fa-volume-off"></i>
+                    </div>
+                    <div class="player_volume_range">
+                        <input type="range" class="player_volume_input" value="100" min="0" max="100">
+                        <div class="player_volume_bar">
+                            <div class="player_volume_point"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Eof player_controls -->
+        </div>
+        <!-- Eof player -->
+
+    </div>
+
+    <div class="loader">
+        <canvas id="loader_anm" class="load_anm"></canvas>
+        <img src="common/images/logo.png" alt="" class="loader_logo">
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="common/js/script.js"></script>
+    <script type="text/javascript" src="common/js/anm.js"></script>
+</body>
+
+</html>

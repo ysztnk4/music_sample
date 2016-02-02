@@ -1,0 +1,176 @@
+/*=======================
+grid.css 
+Yousuke Suzuki
+v1.3
+=======================*/
+
+
+/* PC
+======================================================*/
+
+
+/*
+.grid_1 { width: 6.5%; } 
+.grid_2 { width: 15%; } 
+.grid_3{ width: 23.5%; } 
+.grid_4 { width: 32%; } 
+.grid_5 { width: 40.5%; }
+.grid_6{ width: 49%; } 
+.grid_7 { width: 57.5%; } 
+.grid_8 { width: 66%; } 
+.grid_9 { width: 74.5%; } 
+.grid_10 { width: 83%; } 
+.grid_11 { width: 91.5%; } 
+.grid_12 { width: 100%; } 
+
+
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	margin: 0 2% 1% 0;
+	float: left;
+	display: block;
+}
+*/
+
+.grid_1 {
+    width: 5.125%;
+}
+
+.grid_2 {
+    width: 13.75%;
+}
+
+.grid_3 {
+    width: 22.375%;
+}
+
+.grid_4 {
+    width: 31%;
+}
+
+.grid_5 {
+    width: 39.625%;
+}
+
+.grid_6 {
+    width: 48.25%;
+}
+
+.grid_7 {
+    width: 56.875%;
+}
+
+.grid_8 {
+    width: 65.5%;
+}
+
+.grid_9 {
+    width: 74.125%;
+}
+
+.grid_10 {
+    width: 82.75%;
+}
+
+.grid_11 {
+    width: 91.375%;
+}
+
+.grid_12 {
+    width: 100%;
+}
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+    display: block;
+    float: left;
+    margin: 0 3.5% 3.5% 0;
+}
+
+.alpha {
+    margin-left: 0;
+}
+
+.omega {
+    margin-right: 0;
+}
+
+.center {
+    float: none;
+    margin: 0 auto;
+}
+
+.clear {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+    width: 0;
+    height: 0
+}
+
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    width: 0;
+    height: 0;
+    content: ' ';
+    font-size: 0;
+    line-height: 0;
+}
+
+* html .clearfix,
+*:first-child+html .clearfix {
+    zoom: 1
+}
+
+
+/* Smart Phone
+======================================================*/
+
+@media screen and (max-width: 1024px) {
+    .grid_1,
+    .grid_2,
+    .grid_3,
+    .grid_4,
+    .grid_5,
+    .grid_6,
+    .grid_7,
+    .grid_8,
+    .grid_9,
+    .grid_10,
+    .grid_11,
+    .grid_12 {
+        width: 100%;
+    }
+    .sp_harf {
+        float: left;
+        margin: 0 2% 4% 2%;
+        width: 46%;
+    }
+    .sp_harf:nth-of-type(2n+1) {
+        clear: both !important;
+    }
+}
